@@ -1,0 +1,52 @@
+.header {
+    background-color: bisque;
+    padding: 20px;
+    color:  black;
+  }
+
+  .navbar {
+    background-color: bisque;
+    color: black;
+    font-size: larger;
+    padding: 5px;
+    border: solid;
+    border-color: beige;
+    flex-direction: column;
+  }
+
+  .navbar a {
+    color: #333;
+    margin-right: 5px;
+    text-decoration: none;
+  }
+
+  body {
+    background-color: grey;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .section-content {
+    font-size: 18px;
+  }
+
+  .vermelho {
+    color: rgb(184, 153, 219);
+  }
+  .azul {
+    color: rgb(230, 231, 176);
+  }
+  .amarelo {
+    color: rgb(172, 228, 211);
+  }
+  .verde {
+    color: rgb(233, 142, 136);
+  }

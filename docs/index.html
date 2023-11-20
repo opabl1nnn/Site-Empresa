@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Dreamhouse Imóveis</title>
+</head>
+<body>
+    <header class="header text-left">
+      <h1>Dreamhouse Imóveis</h1>
+      <p>Imobiliaria Renomada localizada em Londrina PR</p>
+    </header>
+  
+    <nav class="navbar">
+      <a href="#about">Sobre</a>
+      <a href="#portfolio">Imóveis</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre nós</h2>
+        <p class="section-content">Somos uma empresa focada em encontrar as melhores opções de imóveis para nossos clientes.</p>
+      </div>
+    </section>
+  
+    <section id="imoveis" class="section">
+      <div class="container">
+        <h2 class="section-title">Imóveis Disponíveis</h2>
+        <p class="section-content">Confira alguns de nossos imóveis a pronta venda:</p>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Casa N1</h3>
+            <p><a href="https://www.zapimoveis.com.br/imovel/venda-casa-3-quartos-com-piscina-santa-monica-londrina-pr-310m2-id-2634785866/" target="_blank" class="text-dark">Santa Monica, Londrina</a></p>
+            <img src="https://resizedimgs.zapimoveis.com.br/fit-in/800x360/named.images.sp/efd543b087d023da4528b6f591dd2bfc/casa-com-3-quartos-a-venda-310m-no-santa-monica-londrina.jpg" height="200" width="200" alt="">
+          </div>
+          <div class="col-md-4">
+            <h3>Casa N2</h3>
+            <p><a href="https://www.zapimoveis.com.br/imovel/venda-casa-4-quartos-com-churrasqueira-monte-belo-londrina-pr-180m2-id-2624489350/" target="_blank" class="text-dark">Monte Belo, Londrina</a></p>
+            <img src="https://resizedimgs.zapimoveis.com.br/fit-in/800x360/named.images.sp/1c7edc88d4cba2e48c1c4437b5ef8cb0/casa-com-4-quartos-a-venda-180m-no-monte-belo-londrina.jpg" height="200" width="200" alt="">
+          </div>
+          <div class="col-md-4">
+            <h3>Casa N3</h3>
+            <p><a href="https://www.zapimoveis.com.br/imovel/venda-casa-3-quartos-com-churrasqueira-portal-de-versalhes-2-londrina-pr-87m2-id-2665397212/" target="_blank" class="text-dark">Oirtak de Versalhes 2, Londrina</a></p>
+            <img src="https://resizedimgs.zapimoveis.com.br/fit-in/800x360/named.images.sp/00040db14651f94f4c331e3730403693/casa-com-3-quartos-para-venda-ou-aluguel-87m-no-portal-de-versalhes-2-londrina.jpg" height="200" width="200" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <p class="section-content">Caso se interesse por algum de nossos imóveis, entre em contato conosco para que possamos realizar um orçamento:</p>
+        <form>
+
+          <div class="form-group">
+            <label for="text1">Nome:</label>
+            <input type="text" class="form-control" id="text1" name="text1">
+          </div>
+    
+          <div class="form-group">
+            <label for="text2">Sobrenome:</label>
+            <input type="text" class="form-control" id="text2" name="text2">
+          </div>
+    
+          <div class="form-group">
+            <label for="number1">Idade:</label>
+            <input type="number" class="form-control" id="number1" name="number1" max="100">
+          </div>
+    
+          <div class="form-group">
+            <label for="number2">CPF:</label>
+            <input type="number" class="form-control" id="number2" name="number2">
+          </div>
+
+            <div class="form-group">
+              <label for="radio1">Sexo:</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio1" id="radio1" value="opcao1">
+                <label class="form-check-label" for="radio1">
+                  Masculino
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio1" id="radio2" value="opcao2">
+                <label class="form-check-label" for="radio1">
+                  Feminino
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio1" id="radio3" value="opcao3">
+                <label class="form-check-label" for="radio1">
+                  Outro
+                </label>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <label for="checkboxes">Qual o Tipo de residencia de sua preferência?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox1" id="checkbox1" value="opcao1" onchange="mudarCor()">
+                <label class="form-check-label" for="checkbox1">
+                  Casa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox2" id="checkbox2" value="opcao2" onchange="mudarCor()">
+                <label class="form-check-label" for="checkbox2">
+                  Apartamento
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox3" id="checkbox3" value="opcao3" onchange="mudarCor()">
+                <label class="form-check-label" for="checkbox3">
+                  Condomínio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox4" id="checkbox4" value="opcao4" onchange="mudarCor()">
+                <label class="form-check-label" for="checkbox4">
+                  Chácara
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox5" id="checkbox5" value="opcao5" onchange="mudarCor()">
+                <label class="form-check-label" for="checkbox5">
+                  Sítio
+                </label>
+              </div>
+            </div>
+      
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+      </div>
+    </section>
+  
+<script src="my.js"></script>
+  </body>
+</html>
